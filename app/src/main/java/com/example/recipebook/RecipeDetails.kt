@@ -449,20 +449,8 @@ fun PageContent(navController: NavController,recipe: Recipe){
 
         // Add to Grocery List button
         item {
-            Spacer(modifier = Modifier.height(20.dp))
-            Button(
-                onClick = {
+            Spacer(modifier = Modifier.height(200.dp))
 
-                    navController.navigate("DisplayShoppingList")
-                },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(50.dp)
-            ) {
-                Text("Grocery List")
-            }
-
-            Spacer(modifier = Modifier.height(300.dp))
         }
     }
 

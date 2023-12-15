@@ -1,5 +1,6 @@
 package com.example.recipebook
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -65,8 +66,8 @@ fun HomeScreen(navController: NavController) {
         }
         item {
            Button(modifier = Modifier
-                .background(color = Color(0xFFf06d0a)) // Use Color() to specify the color
-                .padding(16.dp) // Add some padding for better appearance
+               // .background(color = Color(0xFFf06d0a)) // Use Color() to specify the color
+                //.padding(16.dp) // Add some padding for better appearance
                 .fillMaxWidth(), // Make the button fill the width of its container
                 onClick = { navController.navigate("addRecipe") })
                {

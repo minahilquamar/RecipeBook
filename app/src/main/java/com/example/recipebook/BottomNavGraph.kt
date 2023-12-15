@@ -99,6 +99,16 @@ fun BottomNavGraph(navController: NavHostController , modifier : Modifier) {
         composable("MyRecipes") {
             MyRecipes(navController = navController) // Pass the actual user ID here
         }
+        composable(route = "DisplayShoppingList") { backStackEntry ->
+            val recipeId = backStackEntry.arguments?.getString("recipeId")
+            if (recipeId != null) {
+                Log.d("RecipeId" , recipeId)
+            }
+            else
+                Log.d("RecipeId" , "recipeid is null")
+
+            ShoppingListScreen(navController = navController)
+        }
 
 
     }

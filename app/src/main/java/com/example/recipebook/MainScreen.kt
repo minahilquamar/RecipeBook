@@ -124,6 +124,12 @@ fun MainScreen(googleSignInManager: GoogleSignInManager?, myNavController: NavCo
 //                                icon = R.drawable.logout2
                             ),
                             MenuItem(
+                                id = "GroceryList",
+                                title = "Grocery List",
+                                contentDescription = "GroceryList",
+//                                icon = R.drawable.logout2
+                            ),
+                            MenuItem(
                                 id = "logout",
                                 title = "Logout",
                                 contentDescription = "Get help",
@@ -157,6 +163,9 @@ fun MainScreen(googleSignInManager: GoogleSignInManager?, myNavController: NavCo
                                     }
                                     "myrecipes" ->{
                                         navController.navigate("MyRecipes")
+                                    }
+                                    "GroceryList" ->{
+                                        navController.navigate("DisplayShoppingList")
                                     }
 
                                     "logout" ->
